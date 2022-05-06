@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --primary-color: #49ace0;
+    --secondary-color: #eab643;
+    --third-color: #b8251b;
+    --background-color: #1c1c1d;
+    --white-color: #f0f0f0;
+}
+
+/* Main */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.body {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+    overflow: scroll;
+    z-index: 4;
+}
+
+/* Title */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7rem;
+    color: white;
+}
+
+strong {
+    color: var(--secondary-color);
+}
+
+/* Input */
+.input-div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+}
+
+input {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
+button {
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.deleteBtn {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--third-color);
+    cursor: pointer;
+    margin-left: .25rem;
+}
+
+/* List */
+.list-div {
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: -14vh;
+}
+
+li {
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    color: var(--white-color);
+    overflow: scroll;
+}
+
+ul {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
